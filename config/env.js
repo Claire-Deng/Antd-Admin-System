@@ -1,5 +1,7 @@
 'use strict';
 
+const SKIP_PREFLIGHT_CHECK=true
+
 const fs = require('fs');
 const path = require('path');
 const paths = require('./paths');
