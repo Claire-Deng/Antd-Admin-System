@@ -1,12 +1,11 @@
+import {fromJS} from "immutable";
 
-const initialState = {
-    data:'123'
-};
+const initialState = fromJS([1,2,3,4,5]);
 
 export const home = (state=initialState, action)=>{
     switch(action.type){
-        case 'test1':
-            return {...state, data:action.data};
+        case 'update':
+            return state.push(action.data);
         default:
             return state
     }
